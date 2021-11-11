@@ -1,0 +1,3 @@
+colores = ["rojo", "malva","verde","ambar","cian","burdeos","naranja","amarillo","rosado","lima","violeta","magenta","fucsia","Granate","caoba","marron","oliva","esmeralda","cerceta","añil","vino","lacre","cobre","dorado","chartreuse", "turquesa","zafiro","amatista","purpeo","fandango","coral","salmon","melon","crema","maiz","menta","aguamarina","celeste","bigaro","lavanda","pardo","ante","arena","beigis","blanco","negro","cafe","caqui","canela","chocolate","herrube","leonn","ocre","rufo","secuoya","sepia","senia","mengue"]
+
+print(len(colores))
