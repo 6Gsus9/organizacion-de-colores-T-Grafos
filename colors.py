@@ -41,10 +41,10 @@ while len(vertices)!= len(colores):
 
 #creacion de matriz de adyacencia
 for i in colores:
-    for j in vertices:
+    for j in colores:
         if (i,j) in aristas or (j,i) in aristas:
             matriz[colores.index(i)][colores.index(j)]=1
-            matriz1[colores.index(j)][colores.index(i)]=1
+            matriz1[colores.index(i)][colores.index(j)]=1
               
             
 #print(matriz)
