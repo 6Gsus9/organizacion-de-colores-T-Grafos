@@ -8,7 +8,8 @@ tI=time.time()
 colores = ["rojo", "malva","verde","ambar","cian","burdeos","naranja","amarillo","rosado","lima","violeta","magenta","fucsia","granate","caoba","marron","oliva","esmeralda","cerceta","añil","vino","lacre","cobre","dorado","chartreuse", "turquesa","zafiro","amatista","purpeo","fandango","coral","salmon","melon","crema","maiz","menta","aguamarina","celeste","bigaro","lavanda","pardo","ante","arena","beigis","blanco","negro","cafe","caqui","canela","chocolate","herrube","leon","ocre","rufo","secuoya","sepia","senia","mengue","rojo sangre"]
 colores = random.sample(colores, len(colores)) #### sé organizan de forma aleatoria
 
-# colores= ['cerceta', 'salmon', 'ocre', 'herrube', 'burdeos', 'senia', 'beigis', 'celeste', 'zafiro', 'lima', 'arena', 'mengue', 'fandango', 'chartreuse', 'naranja', 'coral', 'pardo', 'rufo', 'añil', 'ambar', 'amatista', 'blanco', 'oliva', 'sepia', 'melon', 'fucsia', 'vino', 'magenta', 'secuoya', 'rojo sangre', 'granate', 'bigaro', 'lacre', 'amarillo', 'ante', 'rojo', 'violeta', 'aguamarina', 'canela', 'purpeo', 'cafe', 'leon', 'caqui', 'rosado', 'crema', 'chocolate', 'lavanda', 'maiz', 'turquesa', 'dorado', 'negro', 'esmeralda', 'malva', 'cian', 'menta', 'marron', 'caoba', 'verde', 'cobre']
+#colores= ['cerceta', 'salmon', 'ocre', 'herrube', 'burdeos', 'senia', 'beigis', 'celeste', 'zafiro', 'lima', 'arena', 'mengue', 'fandango', 'chartreuse', 'naranja', 'coral', 'pardo', 'rufo', 'añil', 'ambar', 'amatista', 'blanco', 'oliva', 'sepia', 'melon', 'fucsia', 'vino', 'magenta', 'secuoya', 'rojo sangre', 'granate', 'bigaro', 'lacre', 'amarillo', 'ante', 'rojo', 'violeta', 'aguamarina', 'canela', 'purpeo', 'cafe', 'leon', 'caqui', 'rosado', 'crema', 'chocolate', 'lavanda', 'maiz', 'turquesa', 'dorado', 'negro', 'esmeralda', 'malva', 'cian', 'menta', 'marron', 'caoba', 'verde', 'cobre']
+
 print(colores)
 #fuente de colores
 #https://www.mundo.com/cultura/lista-de-todos-los-colores-del-mundo/
@@ -42,8 +43,8 @@ while len(vertices)!= len(colores):
 for i in colores:
     for j in vertices:
         if (i,j) in aristas or (j,i) in aristas:
-            matriz[colores.index(i)][vertices.index(j)]=1
-            matriz1[colores.index(i)][vertices.index(j)]=1
+            matriz[colores.index(i)][colores.index(j)]=1
+            matriz1[colores.index(j)][colores.index(i)]=1
               
             
 #print(matriz)
@@ -74,7 +75,7 @@ def generar_siguiente(actual, visitados):
         siguiente = Nodo(padre = actual, nombre = nombres[k])
         
         
-        if mapa[i][k] == 1 and siguiente not in visitados and ((siguiente.padre.nombre,siguiente.nombre)  in aristas or (siguiente.nombre,siguiente.padre.nombre)  in aristas) :
+        if mapa[i][k] == 1 and siguiente not in visitados :
             
             return siguiente
     return None
