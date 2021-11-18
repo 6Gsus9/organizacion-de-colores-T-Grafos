@@ -11,6 +11,7 @@ colores = random.sample(colores, len(colores)) #### sé organizan de forma aleat
 #colores= ['cerceta', 'salmon', 'ocre', 'herrube', 'burdeos', 'senia', 'beigis', 'celeste', 'zafiro', 'lima', 'arena', 'mengue', 'fandango', 'chartreuse', 'naranja', 'coral', 'pardo', 'rufo', 'añil', 'ambar', 'amatista', 'blanco', 'oliva', 'sepia', 'melon', 'fucsia', 'vino', 'magenta', 'secuoya', 'rojo sangre', 'granate', 'bigaro', 'lacre', 'amarillo', 'ante', 'rojo', 'violeta', 'aguamarina', 'canela', 'purpeo', 'cafe', 'leon', 'caqui', 'rosado', 'crema', 'chocolate', 'lavanda', 'maiz', 'turquesa', 'dorado', 'negro', 'esmeralda', 'malva', 'cian', 'menta', 'marron', 'caoba', 'verde', 'cobre']
 
 print(colores)
+print("------------------------------------------------------------------------")
 #fuente de colores
 #https://www.mundo.com/cultura/lista-de-todos-los-colores-del-mundo/
 
